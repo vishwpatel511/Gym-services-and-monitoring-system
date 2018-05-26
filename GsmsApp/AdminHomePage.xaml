@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GsmsApp.AdminHomePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="members.png" Margin="20,20,20,0"></Image>
+                <Button Text="Members" ></Button>
+                <Image Source="message.png" Margin="20,20,20,0"></Image>
+                <Button Text="Message"></Button>
+                <Image Source="manage.png" Margin="20,20,20,0"></Image>
+                <Button Text="Manage Consultant" Clicked="ConsultantClicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

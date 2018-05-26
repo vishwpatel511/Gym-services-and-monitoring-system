@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GsmsApp.BMICalculator">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="AliceBlue">
+            <Label Text="Please choose the type of calculator" FontAttributes="Bold"></Label>
+            <Picker x:Name="picker" SelectedIndexChanged="pickerChange" >
+                <Picker.Items>
+                    <x:String>Imperial</x:String>
+                    <x:String>Metric</x:String>
+                </Picker.Items>
+            </Picker>
+            <StackLayout Orientation="Horizontal" Padding="10,5,0,5">
+                <Entry x:Name="txtWeight" Placeholder="Weight"></Entry>
+                <Label x:Name="weight" Text="Kg" FontAttributes="Bold"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="10,5,0,5">
+                <Entry x:Name="txtHeight" Placeholder="Height" ></Entry>
+                <Label x:Name="height" Text="cm" FontAttributes="Bold"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Padding="10,5,0,5">
+                <Label Text="Your Calculated BMI is: " ></Label>
+                <Label x:Name="labelResult"></Label>
+            </StackLayout>
+            <Button Text="Calculate BMI" Clicked="CalcBMIButton"></Button>
+             
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

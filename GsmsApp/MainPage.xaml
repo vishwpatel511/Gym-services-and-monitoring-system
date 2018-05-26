@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GsmsApp"
+             x:Class="GsmsApp.MainPage"
+             >
+
+    <StackLayout VerticalOptions="StartAndExpand" BackgroundColor="AliceBlue" >
+        <Label Text="Welcome to GSMS!!" FontAttributes="Bold"></Label>
+        <Image Source="gsms.png"></Image>
+        <Label x:Name="messageLabel" Text="Are you a ?" FontAttributes="Bold"/>
+
+        <Picker x:Name="picker" SelectedIndexChanged="pickerChange" TextColor="AliceBlue" >
+            <Picker.Items>
+                <x:String>Member</x:String>
+                <x:String>Consultant</x:String>
+                <x:String>Admin</x:String>
+            </Picker.Items>
+
+        </Picker>
+
+
+    </StackLayout>
+
+</ContentPage>
